@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"instance","Source":"git::https://github.com/rogerio-calixto/aws-instance-template.git?ref=master","Dir":".terraform/modules/instance"},{"Key":"vpc","Source":"git::https://github.com/rogerio-calixto/aws-network-template.git?ref=master","Dir":".terraform/modules/vpc"}]}

@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "vpc" {
-  source            = "git::https://github.com/rogerio-calixto/aws-network-template.git"
+  source            = "git::https://github.com/rogerio-calixto/aws-network-template.git?ref=master"
   aws_profile       = local.aws_profile
   aws_region        = var.region
   project           = local.project
@@ -70,7 +70,7 @@ resource "aws_iam_instance_profile" "ec2-profile" {
 }
 
 module "instance" {
-  source              = "git::ssh://https://github.com/rogerio-calixto/aws-instance-template.git"
+  source              = "git::https://github.com/rogerio-calixto/aws-instance-template.git?ref=master"
   aws_profile         = local.aws_profile
   region              = var.region
   project             = local.project
